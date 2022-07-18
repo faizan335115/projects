@@ -1,0 +1,661 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: white;
+}
+
+.logo img{
+    border-radius: 50%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-left : 20px;
+    padding-right : 20px;
+}
+
+
+nav{
+    flex: 1;
+    text-align: right; 
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none; 
+}
+
+nav ul li{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li ul{
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+nav ul li ul ul{
+    display: block;
+}
+
+nav ul li ul li{
+    display: block;
+    width: 200px;
+}
+
+
+
+h1{
+    font-size: 64px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: greenyellow;
+    margin: auto;
+    display: block;
+
+}
+
+a:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+}
+
+li a:hover{
+    color: greenyellow;
+
+}
+
+.landing-discription{
+    font-size: 18px;
+    color: #555;
+}
+
+.slide-discription{
+    font-size: 20px;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    background-color: white;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-1{
+    text-align: left;
+    padding-bottom: 200px;
+    padding-left: 30px;
+    flex-basis: 50%;
+    min-width: 250px;
+    overflow: hidden;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+figure{
+    position: relative;
+    left: 0;
+    width: 400%;
+    animation: 10s slide infinite;
+
+}
+
+.slide{
+    position: relative;
+    width: 25%;
+    float: left;
+   
+
+}
+
+.slide-discription-bottom-sale{
+    position: absolute;
+    float: left;
+    top: 30px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: greenyellow;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
+
+.slide-discription-bottom-sale:hover{
+    background-color: rgb(131, 108, 35);
+    box-shadow: black;
+}
+
+.slide-discription-bottom{
+    position: absolute;
+    top: 450px;
+    left: 200px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.slide h1{
+    position: absolute;
+    font-size: 3em;
+    width: 100%;
+    text-align:center;
+    margin-top: 50px;
+    color: rgb(221, 17, 17);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0 0.5);
+}
+
+.slide img{
+    width: 100%;
+    height: 500%;
+}
+
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    display: block;
+    margin: auto;
+    border-radius: 30%;
+}
+
+@keyframes slide{
+    0%{
+        left: 0;
+    }
+    10%{
+        left: 0;
+    }
+    20%{
+        left: -100%;
+    }
+    30%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    50%{
+        left: -200%;
+    }
+    55%{
+        left: -300%;
+    }
+    65%{
+        left: -300%;
+    }
+    66%{
+        left: -200%;
+    }
+    74%{
+        left: -200%;
+    }
+    75%{
+        left: -100%;
+    }
+    85%{
+        left: -100%;
+    }
+    90%{
+        left: 0;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+
+
+.categories{
+    margin: 70px;
+ /*   background-color: bisque; */
+    border-radius: 20px;
+
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    
+}
+
+.col-3 img{
+    weight: 100%;
+
+}
+
+
+
+/* Featured Products */
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 1s;
+
+}
+
+
+.col-4 img{
+    width: 100%;
+    height: 340px;
+
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+/* Featured Products k neachy 1 line lgai ha lakin lagi nahi*/
+.title:: after{
+    content: '';
+    color: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: #555;
+    font-weight: normal; 
+}
+
+.col-4 p{
+    font-size: 14px;
+
+}
+
+.rating .fa{
+    color: #ff523b;
+}
+
+.col-4 :hover{
+    transform: translateY(-5px);
+}
+
+
+
+
+/*-----------Footer-----------*/
+
+.footer{
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    padding: 60px 0 20px;
+
+}
+
+.footer p{
+    color: #fff;
+
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+
+.footer-col-2 img{
+    width: 50px;
+    height: 50px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin: 20px;
+
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12px;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    
+}
+
+.app-logo{
+    margin-top: 20px;
+
+}
+
+.app-logo img{
+    width: 140px;
+
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+
+
+/*-----------Contact Form----------*/
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("pictures/Contact-back-img.png");
+    background-size: cover;
+}
+
+.contact .content{
+    max-width: 80px;
+    text-align: center;
+
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+    
+}
+
+
+.contactcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.contactcontainer .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contactcontainer .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactcontainer .contactinfo .box .contacticons{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+
+.contactcontainer .contactinfo .box .iconstext{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+
+
+}
+
+.contactcontainer .contactinfo .box .iconstext h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+
+
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+
+}
+
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+
+}
+
+.contactform .contactinputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .contactinputbox input,
+.contactform .contactinputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactform .contactinputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+    
+}
+
+.contactform .contactinputbox input:focus ~ span,
+.contactform .contactinputbox input:valid ~ span,
+.contactform .contactinputbox textarea:focus ~ span,
+.contactform .contactinputbox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .contactinputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    
+}
+
+
+@media (max width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .contactcontainer{
+        flex-direction: column;
+    }
+    .contactcontainer .contactinfo{
+        margin-bottom: 40px;
+    }
+    .contactcontainer .contactinfo,
+    .contactform{
+        width: 100%;
+    }
+
+}
+
+
+
+
+/*--------CART---------*/
+
+.cart-btn{
+    height: 40px;
+    width: 45px;
+    border-radius: 20px;
+    background-color: rgb(131, 108, 35);
+    text-align: center;
+    font-family: 'Architects Daughter';
+    font-family: 'Kaushan Script';
+    font-family: 'Lobster';
+    font-size: 18px;
+}
+
+.single-product{
+    margin-top: 80px;
+
+}
+
+.single-product .col-2 img{
+    padding: 0;
+}
+
+.single-product .col-2{
+    padding: 20px;
+}
+
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 2px solid rgb(131, 108, 35);
+
+}
+
+input:focus{
+    outline: none;
+}
+
+.single-product .fa{
+    color: rgb(131, 108, 35);
+    margin-left: 10px;
+}
+
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+

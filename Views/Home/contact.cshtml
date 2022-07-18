@@ -1,0 +1,129 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!--------Header-------->
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+          <img src="~/pictures/logo.png" alt="LOGO" width="85px" height="85px">
+      </div>
+      <nav>
+          <ul>
+            <li> <a asp-controller="Home" asp-action="landingpage">Home</a> </li>
+            <li> <a asp-controller="Home" asp-action="products">Product</a> </li>
+            <li> <a asp-controller="Home" asp-action="products">About</a> </li>
+            <li> <a asp-controller="Home" asp-action="contact">Contact</a> </li>
+            <li> <a asp-controller="Home" asp-action="map">Visit on Map</a> </li>
+          
+          </ul>
+      </nav>
+    </div>
+  </div>
+  
+<!-------Contact Form---------->
+<section class="contact">
+    <div class="content">
+        <h2>Contact us</h2>
+        <p> </p>
+
+    </div>
+    <div class="contactcontainer">
+      <div class="contactinfo">
+        <div class="box">
+          <div class="contacticons"><i class="fa fa-map-marker"></i></div>
+            <div class="iconstext">
+              <h3>Address</h3>
+              <p>F8GF+WM4<br>Sialkot Rd<br>Sambrial<br>Sialkot Processing Zone</p>
+            </div>
+        </div>
+
+        <div class="box">
+          <div class="contacticons"><i class="fa fa-phone"></i></div>
+            <div class="iconstext">
+              <h3>Phone</h3>
+              <p>(052)6521290</p>
+            </div>
+        </div>
+
+        <div class="box">
+          <div class="contacticons"><i class="fa fa-envelope-o"></i></div>
+            <div class="iconstext">
+              <h3>E-mail</h3>
+              <p>19101001-133@uskt.edu.pk</p>
+            </div>
+        </div>
+
+      </div>
+      <div class="contactform">
+        <form>
+          <h2>Send Message</h2>
+          <div class="contactinputbox">
+            <input type="text" required="required">
+            <span>Full Name</span>
+          </div>
+
+          <div class="contactinputbox">
+            <input type="email" required="required">
+            <span>E-mail</span>
+          </div>
+
+          <div class="contactinputbox">
+            <textarea required="required"></textarea>
+            <span>Type Your Message</span>
+          </div>
+
+          <div class="contactinputbox">
+            <input type="submit" value="Send">
+          </div>
+
+        </form>
+      </div>
+    </div>
+</section>
+
+
+<!--------Footer------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Andriod and ios Mobiles.</p>
+                  <div class="app-logo">
+                    <img src="~/pictures/app-store.png">
+                    <img src="~/pictures/play-store.png">
+                  </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="~/pictures/footer-pic.png">
+                <p>Our Purpose Is To Sustainably Make The Pleasure and
+                  Benefits for Animal Life Accessible to The Many</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                  <li>Coupans</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  <li>Join affilitiate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>YouTube</li>
+              </ul>
+            </div>
+
+        </div>
+      <hr>
+      <p class="copyright">copyright 2022</p>
+    </div>
+
+</div>
